@@ -1,0 +1,329 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23426d96' fill-opacity='0.11' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+nav {
+	width: 98vw;
+	border-bottom: 2px solid rgba(2,2,5, .7);
+	border-right:9px solid rgba(2,2,5, .7);
+	height: 70px;
+	position: fixe;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	background:linear-gradient(to bottom , rgba(74,94,105,.8) , rgba(94,114,125,.8));
+}
+
+.icono-nav{
+	padding: 5px;
+	margin-left: 15px; 
+	font-size: 60px;
+	color: #222;
+	position: absolute;
+	left: 0;
+}
+
+.item-nav{
+	position: fixed;
+	top:18px;
+	right: 18px;
+	font-size: 27px;
+	z-index: 1000;
+
+}
+
+body > nav > div > div {
+	display: flex;
+
+}
+body > nav > div > div a{
+	text-decoration: none;
+	color: #222;
+	font-size: 22px;
+	margin: 23px 30px;
+
+}
+
+/*-------------------------------------------------------*/
+.banner{
+	position: relative;
+}
+
+
+body > section.banner > img{
+	width: 98vw;
+	height: 700px;
+	object-fit: cover;
+	margin: auto;
+	position:abso;
+	z-index: -10;
+	border-bottom: 2px solid #111;
+	border-right:9px solid rgba(2,2,5, .7);
+
+
+}
+body > section.banner > h1{
+	z-index: 10;
+	margin-top: -660px;
+	position: absolute;
+	right: 40%;
+	left: 40%;
+	text-align: center;
+
+}
+
+/*-------------------------------------------------------*/
+
+.introduccion{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	margin:auto;
+	background-color: rgba(2,2,2,.9);
+	color:#fff;
+	padding: 3px;
+	justify-content: space-between;
+}
+body > section.introduccion > p{
+	font-size: 20px;
+	width: 80vw;
+}
+body> section.introduccion > h2{
+	text-align: center;
+	font-size: 45px
+}
+body> section.introduccion > p{
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+}
+div.informacion {
+	display: flex;
+	margin-top: 60px;
+
+}
+
+body > section.introduccion >div.informacion >h3	{
+	text-align: center;
+	width: 45%;
+	font-size: 27px;
+	margin-top: 30px;
+}
+body > section.introduccion> div.informacion >	img {
+	width: 250px;
+	height:250px;
+	object-fit: cover;
+	margin: auto;
+	border-radius: 15%;
+
+}
+body > section.introduccion > div:nth-child(4) > img:nth-child(2),body > section.introduccion > div:nth-child(4) > img:nth-child(3){
+	height:450px;
+}
+
+h3.resultados {
+	padding: 100px;
+	font-size: 50px;
+	margin: 50px auto;
+	text-align: center;	
+
+}
+
+@media screen and (min-width: 210px) and (max-width: 930px){
+	div.informacion {
+		flex-direction: column;
+
+	}
+	body > section.introduccion >div.informacion >h3	{
+		text-align: center;
+		width: 80%;
+		font-size: 20px;
+		margin-top: 30px;
+		margin: auto;
+	}
+	body > section.introduccion> div.informacion >	img {
+		width: 60%;
+		height:150px;
+		object-fit: cover;
+		margin: 10px auto;
+		border-radius: 15%;
+
+	}
+	body > section.introduccion > div:nth-child(4) > img:nth-child(2),body > section.introduccion > div:nth-child(4) > img:nth-child(3){
+	height:150px;
+}
+body> section.introduccion > h2{
+	text-align: center;
+	font-size: 25px;
+}
+body > section.introduccion > p{
+	font-size: 15px;
+	width: 60vw;
+}
+}
+
+
+/*-------------------------------------------------------*/
+
+
+
+.galeria-container  {
+	display: grid; 
+	grid-template-columns: repeat(auto-fill,minmax(350px,2fr));
+	grid-row-gap: 2px;
+	width: 98vw;
+	border-right:9px solid rgba(2,2,5, .7);
+	background-color: #222;
+	padding-top: 30px;
+
+}
+div > img{
+	width: 100%;
+	height: 350px;
+	border-radius: 11%;
+	object-fit: cover;
+	transition-delay: .2s;
+	transition-duration: .4s;
+	
+	
+}
+div > img:hover{
+	width: 100%;
+	height: 347px;
+	border-radius: 14%;
+	object-fit: cover;
+
+}
+
+div > img:nth-child(3), img:nth-child(4), img:nth-child(7),img:nth-child(10),img:nth-child(17){
+	grid-column:1/3;
+
+}
+
+
+
+@media screen and (min-width: 1064px) and (max-width: 1500px){
+	div > img:nth-child(3){
+		grid-column:1/3;
+
+	}
+	div > img:nth-child(4){
+		grid-column:1/3;
+
+	}
+	div > img:nth-child(7){
+		grid-column:1/3;
+
+	}
+	div > img:nth-child(10){
+		grid-column:1/3;
+	}
+
+	div > img:nth-child(17){
+		grid-column:1/3;
+	}
+	div > img:nth-child(3){
+		grid-column:1/3;
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	}
+	div > img:nth-child(1){
+		grid-column:1/3;
+
+	}
+	div > img:nth-child(6){
+		grid-column:1/3;
+
+	}
+	div > img:nth-child(9){
+		grid-column:1/3;
+	}
+
+	div > img:nth-child(2){
+		grid-column:3/4;
+		grid-row:1/3;
+		height: 100%;
+	}
+	div > img:nth-child(5){
+		height: 704px;
+		
+	}
+	div > img:nth-child(6){
+		grid-row:3/5;
+		grid-column:1/4;
+	}
+	div > img:nth-child(4){
+		height: 100%;
+	}
+	div > img:nth-child(8){
+		grid-row:6/8;
+		grid-column:3/4;
+		height: 100%;
+	}
+	div > img:nth-child(15){
+		grid-column:1/3;
+	}
+	div > img:nth-child(19){
+		grid-column:1/3;
+	}
+	div > img:nth-child(18){
+		grid-column:3/4;
+		grid-row: 11/13;
+		height: 100%;	
+	}
+
+
+
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+footer {
+	background-color: #222;
+	color: #aaa;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	align-self: flex-end;
+
+}
+body > footer > div.footer-cont {
+	display: flex;
+	flex-wrap: wrap;
+	margin:auto;
+}
+body > footer > div > section {
+	margin:auto;
+	text-align: center;
+
+}
+
+body > footer > div > section:nth-child(2) > div{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body > footer > div > section:nth-child(2) > div > a {
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #aaa;
+
+}
+body > footer > div > section:nth-child(2) > div > a :hover  {
+	width: 40px;
+	height:40px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+
+
+}
